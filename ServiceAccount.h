@@ -3,6 +3,10 @@
 // Date: 9/15/25
 // Project: 272 Forking & Overloading Exercise
 //
+// Name: Melvino Roxas
+// Course: MCSCI-272
+// Date: 9/22/25
+//
 
 #ifndef CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H
 #define CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H
@@ -84,7 +88,7 @@ public:
  * @return true if both accounts have the same balance, false otherwise
  * @note Comparison is based solely on account balance
  */
-bool operator==(const ServiceAccount&, const ServiceAccount&);
+bool operator==(const ServiceAccount& a, const ServiceAccount& b);
 
 /**
  * @brief Greater-than operator overload for ServiceAccount objects
@@ -94,5 +98,14 @@ bool operator==(const ServiceAccount&, const ServiceAccount&);
  * @note Comparison is based solely on account balance
  */
 bool operator>(const ServiceAccount&, const ServiceAccount&);
+
+/**
+ * @brief less-than operator overload for ServiceAccount objects
+ * @param lhs Left-hand side ServiceAccount object
+ * @param rhs Right-hand side ServiceAccount object
+ * @return true if left account has less balance than right account, false otherwise
+ * @note Comparison is based solely on account balance
+ */
+bool operator<(const ServiceAccount& a, const ServiceAccount& b);
 
 #endif //CPSC272_OPERATOR_OVERLOADING_STARTER_SERVICEACCOUNT_H

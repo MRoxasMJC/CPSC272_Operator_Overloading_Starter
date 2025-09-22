@@ -3,6 +3,10 @@
 // Date: 9/15/25
 //Project: 272 Forking & Overloading Exercise
 //
+// Name: Melvino Roxas
+// Course: MCSCI-272
+// Date: 9/22/25
+//
 #include <iostream>
 #include "ServiceAccount.h"
 
@@ -38,6 +42,17 @@ int main() {
         std::cout << "Account a has more money" << std::endl;
     else
         std::cout << "Account b has more money" << std::endl;
+    
+    // Test less-than operator (<) - compares accounts based on balance only
+    
+    //Set account balances of 'a' and 'b' to 100 or 200 to demonstrate less-than operator
+    a.setBalance(200.00);
+    b.setBalance(100.00);
+    
+    if (a < b)
+        std::cout << "Account a has less money" << std::endl;
+    else
+        std::cout << "Account b has less money" << std::endl;
     
     return 0;  // Indicate successful program execution
 }
